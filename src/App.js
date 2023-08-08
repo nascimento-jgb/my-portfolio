@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ThemeProvider, DefaultTheme, StyleReset, Div, Button, Text, Icon } from 'react-atomize';
+import Header from './components/Header';
+
+const theme = {
+	...DefaultTheme,
+	colors: {
+		...DefaultTheme.colors,
+		brand800: '#671de1',
+	},
+	rounded: {
+		...DefaultTheme.rounded,
+		brandRadius: '20px',
+	},
+	typography: {
+		textSize: {
+			heading: '24px',
+			subheader: '18px',
+		},
+	},
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ThemeProvider theme={theme}>
+			<StyleReset />
+			<Header theme={theme} />
+			<Div>
+				<Button>Click Me</Button>
+				<Text textColor="brand800">Hello, Atomize!</Text>
+				<Icon name="User" size="20px" />
+			</Div>
+		</ThemeProvider>
+	);
 }
 
 export default App;
