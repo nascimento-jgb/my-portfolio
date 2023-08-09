@@ -1,26 +1,51 @@
-import React from 'react';
-import { Div, Text, Button } from 'react-atomize';
+import React, { useState } from 'react';
+import { Div, Text, Button} from 'react-atomize';
 
-const Header = ({ theme }) => {
+const Header = () => {
+
+	const [hoveredButton, setHoveredButton] = useState(null);
+
+  	const handleButtonHover = (buttonName) => {
+    	setHoveredButton(buttonName);
+  };
+
 	return (
-		<Div p="2rem" bg={theme.colors.brand800} d="flex" justify="space-between" align="center">
-			<Text textSize={theme.typography.textSize.heading} textColor="white" textWeight="800">
-				Your Name
+		<Div p="4rem 2rem" bg="transparent" d="flex" justify="space-between" align="center">
+			<Text textSize="title" textColor="black" textWeight="700" fontFamily="ternary" fontSize="45px">
+				João Nascimento
 			</Text>
-			<Div d="flex" gap="1rem">
-				<Button textSize={theme.typography.textSize.subheader} textColor="white">
-					Home
+			<Div d="flex" gap="5rem" >
+				<Button
+					bg="transparent"
+					textSize="body"
+					textColor={hoveredButton && hoveredButton !== 'about' ? 'gray500' : 'black'}
+					p="1rem"
+					onMouseEnter={() => handleButtonHover('about')}
+					onMouseLeave={() => setHoveredButton(null)}
+					transition>
+				About
 				</Button>
-				<Button textSize={theme.typography.textSize.subheader} textColor="white">
-					About
+				<Button
+					bg="transparent"
+					textSize="body"
+					textColor={hoveredButton && hoveredButton !== 'work' ? 'gray500' : 'black'}
+					p="1rem"
+					onMouseEnter={() => handleButtonHover('work')}
+					onMouseLeave={() => setHoveredButton(null)}
+					transition>
+				Work
 				</Button>
-				<Button textSize={theme.typography.textSize.subheader} textColor="white">
-					Portfolio
+				<Button
+					bg="transparent"
+					textSize="body"
+					textColor={hoveredButton && hoveredButton !== 'contact' ? 'gray500' : 'black'}
+					p="1rem"
+					onMouseEnter={() => handleButtonHover('contact')}
+					onMouseLeave={() => setHoveredButton(null)}
+					transition>
+				Contact
 				</Button>
-				<Button textSize={theme.typography.textSize.subheader} textColor="white">
-					Contact
-				</Button>
-			</Div>
+		</Div>
 		</Div>
 	);
 };
