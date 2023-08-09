@@ -1,24 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-    font-family: 'Gilroy-ExtraBold';
-    src: url("./fonts/Gilroy-ExtraBold.otf") format("opentype");
+	font-family: 'GilroyExtraBold';
+	src: url("./fonts/Gilroy-ExtraBold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy-Light';
-    src: url("./fonts/Gilroy-Light.otf") format("opentype");
+	font-family: 'GilroyLight';
+	src: url("./fonts/Gilroy-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'GraphikSemiBold';
-    src: url("./fonts/GraphikSemibold.otf") format("opentype");
+	font-family: 'GraphikSemiBold';
+	src: url("./fonts/GraphikSemibold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'GraphikRegular';
-    src: url("./fonts/GraphikRegular.otf") format("opentype");
+	font-family: 'GraphikRegular';
+	src: url("./fonts/GraphikRegular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'GraphikBold';
-    src: url("./fonts/GraphikBold.otf") format("opentype");
+	font-family: 'GraphikBold';
+	src: url("./fonts/GraphikBold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'GilroyExtraBold', 'GilroyLight', 'GraphikRegular', 'GraphikSemiBold',
+    'GraphikBold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
