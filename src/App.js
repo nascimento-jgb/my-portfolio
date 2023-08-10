@@ -26,25 +26,6 @@ function getFooter(routePath) {
 	}
 }
 
-// function App() {
-// 	// const location = useLocation()
-// 	return (
-// 	<Router>
-// 		<div>
-// 			{getNavigationBar(useLocation().pathname)}
-// 			<ScrollToTop />
-// 				<Routes>
-// 					<Route path="/" element={<Hero />} />
-// 					<Route path="/about" element={<About />} />
-// 					<Route path="/contact" element={<Contact />} />
-// 					{/* Other routes go here */}
-// 				</Routes>
-// 			{getFooter(useLocation().pathname)}
-// 		</div>
-// 	</Router>
-// 	);
-// }
-
 function MainContent() {
 	const location = useLocation();
 
