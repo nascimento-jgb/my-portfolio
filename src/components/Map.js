@@ -2,7 +2,7 @@ import React from "react";
 
 const Map = () => {
 	return (
-		<div className="pt-36 bg-black relative">
+		<div className="pt-36 bg-black relative pr-16 l-16">
 			<div className="flex justify-between items-center">
 				<div className="ml-20 mr-15 text-center pt-4">
 					<p className="text-white text-2xl font-sans-serif font-GilroyBold leading-relaxed tracking-wide z-20"
@@ -16,15 +16,15 @@ const Map = () => {
 						<div className="mb-2">before moving to Europe.</div>
 					</p>
 				</div>
-				<div className="mr-20 z-10 relative">
+				<div className="mr-21 z-10 relative">
 					<img
 						src="map.png"
 						alt="Map"
-						className="w-full max-h-full max-w-none opacity-70"
+						className="w-full max-h-full max-w-none opacity-50"
 					/>
 				</div>
 			</div>
-			<div className="absolute bottom-[50%] left-[75%] transform -translate-x-[-45px] translate-y-[255px]">
+			<div className="absolute bottom-[50%] left-[75%] transform -translate-x-[-120px] translate-y-[255px]">
 				<div className="animate-pulse">
 					<svg
 						className="h-16 w-16 text-white opacity-90 fill-current"

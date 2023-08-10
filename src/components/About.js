@@ -3,6 +3,7 @@ import AboutAnimation from "./AboutAnimation";
 import Grid from "./Grid";
 import Map from "./Map";
 import Experience from "./Experience";
+import TechStack from "./TechStack";
 
 const About = () => {
 	return (
@@ -11,6 +12,7 @@ const About = () => {
 			<Grid />
 			<Map />
 			<Experience />
+			<TechStack />
 	  </div>
 	);
   };
