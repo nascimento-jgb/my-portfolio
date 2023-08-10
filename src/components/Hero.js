@@ -3,10 +3,6 @@ import React from 'react';
 const Hero = () => {
 	return (
 		<div className="relative h-screen bg-transparent overflow-hidden">
-			{/* <div className="absolute inset-0 bg-gray-900"> */}
-				{/* Background video or image goes here */}
-			{/* </div> */}
-			{/* <div className="absolute inset-0 bg-transparent opacity-40"></div> */}
 			<div className="relative z-10 flex flex-col justify-center items-center h-full text-black">
 				<h1 className="text-8xl font-sans-serif font-regular font-GilroyLight mb-6 text-center max-w-6xl mx-auto tracking-tighter mt-150px">
 						Developer and designer specialized in mobile</h1>

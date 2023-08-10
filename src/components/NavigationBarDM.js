@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function NavigationBar() {
+function NavigationBarDM() {
 	const [hoveredButton, setHoveredButton] = useState(null);
 
 	const handleButtonHover = (buttonName) => {
@@ -9,18 +9,18 @@ function NavigationBar() {
 	};
 
 	return (
-		<div className="bg-transparent p-12">
-			<div className="p-12 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-white">
+		<div className="bg-black p-12">
+			<div className="p-12 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-black">
 				<Link
 				 to="/"
-				 className="text-3xl font-medium font-sans-serif tracking-tighter font-GraphikSemiBold text-black hover:text-gray-500 pl-4">
+				 className="text-3xl font-medium font-sans-serif tracking-tighter font-GraphikSemiBold text-white hover:text-gray-400 pl-4">
 					João Nascimento
 				</Link>
 				<div className="flex gap-5 font-GraphikSemiBold font-medium text-base pr-6">
 					<Link
 						to="/about"
 						className={`${
-							hoveredButton && hoveredButton !== 'about' ? 'text-gray-500' : 'text-black'
+							hoveredButton && hoveredButton !== 'about' ? 'text-gray-400' : 'text-white'
 						} p-2`}
 						onMouseEnter={() => handleButtonHover('about')}
 						onMouseLeave={() => setHoveredButton(null)}
@@ -29,7 +29,7 @@ function NavigationBar() {
 					</Link>
 					<button
 						className={`${
-							hoveredButton && hoveredButton !== 'work' ? 'text-gray-500' : 'text-black'
+							hoveredButton && hoveredButton !== 'work' ? 'text-gray-400' : 'text-white'
 						} p-2`}
 						onMouseEnter={() => handleButtonHover('work')}
 						onMouseLeave={() => setHoveredButton(null)}
@@ -39,7 +39,7 @@ function NavigationBar() {
 					<Link
 						to="/contact"
 						className={`${
-							hoveredButton && hoveredButton !== 'contact' ? 'text-gray-500' : 'text-black'
+							hoveredButton && hoveredButton !== 'contact' ? 'text-gray-400' : 'text-white'
 						} p-2`}
 						onMouseEnter={() => handleButtonHover('contact')}
 						onMouseLeave={() => setHoveredButton(null)}
@@ -52,5 +52,5 @@ function NavigationBar() {
 	);
 }
 
-export default NavigationBar;
+export default NavigationBarDM;
 
