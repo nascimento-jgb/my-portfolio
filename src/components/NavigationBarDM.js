@@ -27,7 +27,9 @@ function NavigationBarDM() {
 					>
 						About
 					</Link>
-					<button
+					<Link
+						to="https://github.com/nascimento-jgb"
+						target="_blank"
 						className={`${
 							hoveredButton && hoveredButton !== 'work' ? 'text-gray-400' : 'text-white'
 						} p-2`}
@@ -35,7 +37,7 @@ function NavigationBarDM() {
 						onMouseLeave={() => setHoveredButton(null)}
 					>
 						Work
-					</button>
+					</Link>
 					<Link
 						to="/contact"
 						className={`${

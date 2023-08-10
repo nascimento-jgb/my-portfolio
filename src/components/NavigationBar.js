@@ -27,7 +27,9 @@ function NavigationBar() {
 					>
 						About
 					</Link>
-					<button
+					<Link
+						to="https://github.com/nascimento-jgb"
+						target="_blank"
 						className={`${
 							hoveredButton && hoveredButton !== 'work' ? 'text-gray-500' : 'text-black'
 						} p-2`}
@@ -35,7 +37,7 @@ function NavigationBar() {
 						onMouseLeave={() => setHoveredButton(null)}
 					>
 						Work
-					</button>
+					</Link>
 					<Link
 						to="/contact"
 						className={`${

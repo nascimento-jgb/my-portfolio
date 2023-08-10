@@ -1,10 +1,8 @@
 import React from 'react';
-import NavigationBar from './NavigationBar';
 
 const ContactForm = () => {
 	return (
 		<div className='pt-28'>
-			{/* <NavigationBar /> */}
 			<h1 className="text-8xl font-sans-serif font-regular font-GilroyLight mb-4 text-center max-w-6xl mx-auto tracking-tighter mt-44px mb-150px">
 				Let's get in touch
 			</h1>

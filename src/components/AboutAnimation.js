@@ -30,7 +30,7 @@ const AboutAnimation = () => {
 			}`}
 		  >
 			My name is João, and I'm a developer-designer from Finland. I am
-			currently looking for an oportunity to apply my coding expertise,
+			currently looking for an opportunity to apply my coding expertise,
 			passion for mobile and minimal design.
 		</p>
 		<p
