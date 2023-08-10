@@ -10,7 +10,8 @@ function NavigationBarDM() {
 
 	return (
 		<div className="bg-black p-12">
-			<div className="p-12 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-black">
+			<div className="p-12 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-black"
+			style={{backgroundColor: 'rgba(0, 0, 0, 0.1)'}}>
 				<Link
 				 to="/"
 				 className="text-3xl font-medium font-sans-serif tracking-tighter font-GraphikSemiBold text-white hover:text-gray-400 pl-4">

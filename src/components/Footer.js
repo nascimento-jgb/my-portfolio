@@ -8,7 +8,7 @@ const Footer = ({ darkMode }) => {
 	};
 
 	return (
-		<footer className="bg-transparent text-black py-10 border-t" style={{ height: 'calc(100vh - 80px)', overflowY: 'auto' }}>
+		<footer className="bg-transparent text-black py-6 border-t" style={{ height: 'calc(100vh - 80px)', overflowY: 'auto' }}>
 			<div className="container mx-auto">
 				<div className="flex flex-col lg:flex-row justify-between items-center mt-12">
 					<div className="text-center lg:text-left mb-6 lg:mb-0">
