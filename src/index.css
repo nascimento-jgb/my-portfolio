@@ -37,18 +37,39 @@
 	font-style: normal;
 }
 
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	}
+
+	.animate-step1 {
+	animation: fade-in 2s forwards;
+	}
+
+	.animate-step2 {
+	animation: fade-in 2s 0.5s forwards;
+	}
+
+	.animate-step3 {
+	animation: fade-in 2s 1s forwards;
+	}
+
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'GilroyExtraBold', 'GilroyLight', 'GraphikRegular', 'GraphikSemiBold',
-    'GraphikBold';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif, 'GilroyExtraBold', 'GilroyLight', 'GraphikRegular', 'GraphikSemiBold',
+		'GraphikBold';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }

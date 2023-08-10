@@ -1,14 +1,10 @@
 import React from "react";
-import NavigationBarDM from "./NavigationBarDM";
-import FooterDM from "./FooterDM";
+import AboutAnimation from "./AboutAnimation";
 
 const About = () => {
 	return (
 	  <div>
-		{/* <NavigationBarDM /> */}
-			HELLOOOOOOO
-		{/* <FooterDM /> */}
-		{/* Rest of your About page content */}
+			<AboutAnimation />
 	  </div>
 	);
   };
