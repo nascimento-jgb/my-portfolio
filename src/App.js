@@ -9,6 +9,7 @@ import About from './components/About';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
+// import HeroAboutMe from './components/HeroAboutMe';
 
 function getNavigationBar(routePath) {
 	if (routePath === '/about') {
