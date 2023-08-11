@@ -26,6 +26,9 @@ const Footer = ({ darkMode }) => {
 							} text-3xl font-bold font-sans-serif font-GraphikSemiBold transition pl-4 w-full text-left`}
 							onMouseEnter={() => handleButtonHover('email')}
 							onMouseLeave={() => setHoveredButton(null)}
+							onClick={() => {
+								window.location.href = 'mailto:nasc.joaogb@icloud.com';
+							  }}
 						>
 							Email
 						</button>
@@ -35,6 +38,9 @@ const Footer = ({ darkMode }) => {
 							} text-3xl font-bold font-sans-serif font-GraphikSemiBold transition pl-4 w-full text-left`}
 							onMouseEnter={() => handleButtonHover('twitter')}
 							onMouseLeave={() => setHoveredButton(null)}
+							onClick={() => {
+								window.open('https://twitter.com/JoaoGBNasc', '_blank', 'noopener,noreferrer');
+							  }}
 						>
 							Twitter
 						</button>
@@ -44,6 +50,9 @@ const Footer = ({ darkMode }) => {
 							} text-3xl font-bold font-sans-serif font-GraphikSemiBold transition pl-4 w-full text-left`}
 							onMouseEnter={() => handleButtonHover('github')}
 							onMouseLeave={() => setHoveredButton(null)}
+							onClick={() => {
+								window.open('https://github.com/nascimento-jgb', '_blank', 'noopener,noreferrer');
+							  }}
 						>
 							Github
 						</button>
@@ -53,6 +62,9 @@ const Footer = ({ darkMode }) => {
 							} text-3xl font-bold font-sans-serif font-GraphikSemiBold transition pl-4 w-full text-left`}
 							onMouseEnter={() => handleButtonHover('linkedin')}
 							onMouseLeave={() => setHoveredButton(null)}
+							onClick={() => {
+								window.open('https://www.linkedin.com/in/joaog-nascimento/', '_blank', 'noopener,noreferrer');
+							  }}
 						>
 							LinkedIn
 						</button>
@@ -62,6 +74,9 @@ const Footer = ({ darkMode }) => {
 							} text-3xl font-bold font-sans-serif font-GraphikSemiBold transition pl-4 w-full text-left`}
 							onMouseEnter={() => handleButtonHover('instagram')}
 							onMouseLeave={() => setHoveredButton(null)}
+							onClick={() => {
+								window.open('https://www.instagram.com/joaog.nascimento/', '_blank', 'noopener,noreferrer');
+							  }}
 						>
 							Instagram
 						</button>
