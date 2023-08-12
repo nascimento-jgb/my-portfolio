@@ -1,6 +1,20 @@
 import React from 'react';
 
 const ContactForm = () => {
+
+	const handleSendMessage = () => {
+		const name = encodeURIComponent(document.getElementById('name').value);
+		const email = encodeURIComponent(document.getElementById('email').value);
+		const message = encodeURIComponent(document.getElementById('message').value);
+
+		const subject = encodeURIComponent('Contact Form Submission');
+		const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message.replace(/\n/g, '%0D%0A')}`;
+
+		const mailtoLink = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+
+		window.location.href = mailtoLink;
+	  };
+
 	return (
 		<div className='pt-28'>
 			<h1 className="text-8xl font-sans-serif font-regular font-GilroyLight mb-4 text-center max-w-6xl mx-auto tracking-tighter mt-44px mb-150px">
@@ -41,7 +55,10 @@ const ContactForm = () => {
 					/>
 				</div>
 				<div className='w-96 mx-auto mr-44'>
-					<button className="bg-black text-white py-4 px-8 font-semibold font-GilroyLight font-sans-serif hover:bg-gray-500 transition mt-8 mb-24">
+					<button
+						className="bg-black text-white py-4 px-8 font-semibold font-GilroyLight font-sans-serif hover:bg-gray-500 transition mt-8 mb-24"
+						onClick={handleSendMessage}
+						>
 						Send Message
 					</button>
 				</div>

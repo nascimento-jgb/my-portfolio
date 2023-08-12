@@ -34,7 +34,7 @@ const SectionWork2 = () => {
 			</a>
 			<div className="absolute right-0 top-1/2 transform -translate-y-1/2 -translate-x-1/4">
 				<img
-					src="mockup-iphone.png"
+					src="Pokemon-mockup.png"
 					alt="Profile"
 					className="h-[700px] opacity-90"
 				/>
