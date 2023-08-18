@@ -2,7 +2,7 @@ import React from "react";
 
 const Map = () => {
 	return (
-		<div className="pt-36 bg-black relative pr-16 l-16">
+		<div className="pt-36 bg-black relative pr-16">
 			<div className="flex justify-between items-center">
 				<div className="ml-20 mr-15 text-center pt-4">
 					<p className="text-white text-2xl font-sans-serif font-GilroyBold leading-relaxed tracking-wide z-20"
