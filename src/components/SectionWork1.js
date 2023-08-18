@@ -36,7 +36,7 @@ const SectionWork1 = () => {
 				<img
 					src="Little-Lemon-Banner.png"
 					alt="Profile"
-					className="h-[600px] w-[350px] opacity-90"
+					className="h-[600px] w-[350px] opacity-90 hidden md:block"
 				/>
 			</div>
 		</div>
@@ -44,5 +44,3 @@ const SectionWork1 = () => {
 };
 
 export default SectionWork1;
-
-
