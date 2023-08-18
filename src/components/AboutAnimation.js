@@ -53,7 +53,8 @@ const AboutAnimation = () => {
 		</div>
 		  {animationStep >= 3 && (
 			<img
-			className="max-w-full opacity-90 absolute top-0 right-0 z-10 animate-step3 mt-4 pr-44"
+			className="max-w-full opacity-90 absolute top-0 right-0 z-10 animate-step3 mt-1 md:mt-2 lg:mt-4 pr-44 md:pr-30 lg:pr-44
+				-translate-x-[-50%] -translate-y-[-5%] md:-translate-y-[-5%] md:-translate-x-[-5%] lg:-translate-y-[-5%] lg:-translate-x-[5%]"
 			src="flipped-profile.png"
 			alt="Description"
 		  />

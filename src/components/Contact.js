@@ -80,13 +80,6 @@ const ContactForm = () => {
 					className="bg-black text-white py-2 md:py-3 px-4 md:px-6 font-semibold font-GilroyLight font-sans-serif hover:bg-gray-500 transition"
 					onClick={handleSendMessage}
 		 		 >
-			{/* <div className='w-full md:w-96 mx-auto mr-0 md:mr-8'>
-			<button
-				className={`${
-					showButton ? 'block' : 'hidden'
-					} bg-black text-white py-2 md:py-3 px-4 md:px-6 font-semibold font-GilroyLight font-sans-serif hover:bg-gray-500 transition mt-4 md:mt-8 mb-8 md:mb-16`}
-					onClick={handleSendMessage}
-			  > */}
 				Send Message
 			  </button>
 			  )}
