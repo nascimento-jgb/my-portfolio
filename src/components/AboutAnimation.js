@@ -12,17 +12,17 @@ const AboutAnimation = () => {
 	}, []);
 
 	return (
-		<div className="bg-black relative flex flex-col font-sans-serif font-GilroyBold justify-center min-h-screen text-white pt-64">
+		<div className="bg-black relative flex flex-col font-sans-serif font-GilroyBold justify-center min-h-screen text-white pt-60 md:pt-60 lg:pt-64">
 		<h1
-			className={`text-8xl font-semibold mb-8 opacity-0 ${
+			className={`text-4xl md:text-6xl lg:text-8xl font-semibold mb-6 md:mb-6 lg:mb-8 opacity-0 ${
 			  animationStep >= 1 ? "animate-step1" : ""
 			}`} style={{ fontSize: "160px" , zIndex: 20 }}
 		>
-			<div className="text-left ml-80 leading-32 pl-[-4] pb-4">
+			<div className="text-left md:text-left lg:text-left ml-20 md:ml-60 lg:ml-80 pl-[-4] pb-4 leading-relaxed">
 				Hello
 			</div>
 		</h1>
-		<div className="text-justify whitespace-pre-wrap break-words pr-80 pl-80 font-sans-serif font-GilroyLight leading-relaxed tracking-wide"
+		<div className="text-justify whitespace-pre-wrap break-words pl-20 pr-20 md:pl-60 md:pr-60 lg:pr-80 lg:pl-80 font-sans-serif font-GilroyLight leading-relaxed tracking-wide"
 			style={{ fontSize: "100px" , zIndex: 20}}>
 		<p
 			className={`text-2xl font-regular mb-8 opacity-0 p-2 ${
@@ -63,3 +63,5 @@ const AboutAnimation = () => {
 }
 
 export default AboutAnimation;
+
+
