@@ -7,7 +7,7 @@ import TechStack from "./TechStack";
 
 const About = () => {
 	return (
-	  <div>
+	  <div className="bg-black">
 			<AboutAnimation />
 			<Grid />
 			<Map />
