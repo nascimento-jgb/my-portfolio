@@ -33,6 +33,7 @@ import SectionAboutMe from './SectionAboutMe';
 import SectionText from './SectionText';
 import SectionWork1 from './SectionWork1';
 import SectionWork2 from './SectionWork2';
+import SectionWork0 from './SectionWork0';
 
 const Hero = () => {
 	return (
@@ -49,6 +50,7 @@ const Hero = () => {
 			<div className="mt-2">
 				<SectionAboutMe />
 				<SectionText />
+				<SectionWork0 />
 				<SectionWork1 />
 				<SectionWork2 />
 			</div>
