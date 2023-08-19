@@ -32,11 +32,11 @@ const SectionWork1 = () => {
 					GitHub
 				</h3>
 			</a>
-			<div className="absolute right-0 top-1/2 transform -translate-y-[45%] -translate-x-[50%]">
+			<div className="absolute right-0 top-1/2 transform -translate-y-1/2 -translate-x-1/4">
 				<img
-					src="Little-Lemon-Banner.png"
+					src="Restaurant_mock.png"
 					alt="Profile"
-					className="h-[600px] w-[350px] opacity-90 hidden md:block"
+					className="h-[700px] opacity-90 hidden md:block"
 				/>
 			</div>
 		</div>
